@@ -147,6 +147,28 @@ import {
 } from 'awsome-javascript-typechecker';
 ```
 
+### Number Utilities
+
+```javascript
+import {
+  sign,          // Get the sign of a number (-1, 0, or 1)
+  isEven,        // Check if number is even
+  isOdd,         // Check if number is odd
+  isInteger,     // Check if value is an integer
+  isPositive,    // Check if number is positive
+  isNegative,    // Check if number is negative
+  isFiniteNumber // Check if value is a finite number
+} from 'awsome-javascript-typechecker';
+
+// Examples
+console.log(sign(42));    // 1
+console.log(sign(-3.14)); // -1
+console.log(sign(0));     // 1
+console.log(sign(-0));    // -1
+console.log(isEven(4));   // true
+console.log(isOdd(5));    // true
+```
+
 ### Promise and Async Utilities
 
 ```javascript

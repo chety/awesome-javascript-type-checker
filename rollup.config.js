@@ -4,11 +4,17 @@ import terser from '@rollup/plugin-terser';
 
 const createConfig = (format, minify = false) => ({
   input: 'src/index.js',
+  treeshake: true,
   output: {
     file: `lib/index${format === 'esm' ? '.esm' : ''}${minify ? '.min' : ''}.js`,
     format,
     name: format === 'umd' ? 'TypeChecker' : undefined,
     sourcemap: true,
+    exports: 'named',
+    compact: minify,
+    externalLiveBindings: false,
+    freeze: false,
+    interop: 'auto'
   },
   plugins: [
     nodeResolve(),

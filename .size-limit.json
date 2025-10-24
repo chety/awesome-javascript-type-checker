@@ -1,0 +1,6 @@
+{
+  "files": ["lib/*.js"],
+  "import": {
+    "@size-limit/preset-small-lib": {}
+  }
+}
