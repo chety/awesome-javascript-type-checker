@@ -1,0 +1,52 @@
+{
+  "name": "awsome-javascript-typechecker",
+  "version": "1.0.0",
+  "description": "A robust JavaScript type checking library with comprehensive type validation utilities",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "vitest",
+    "test:watch": "vitest watch",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "javascript",
+    "types",
+    "typecheck",
+    "validation",
+    "runtime",
+    "type-safe",
+    "utilities"
+  ],
+  "author": "Chety",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "eslint": "^8.52.0",
+    "rollup": "^4.0.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chety/awesome-javascript-type-checker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chety/awesome-javascript-type-checker/issues"
+  },
+  "homepage": "https://github.com/chety/awesome-javascript-type-checker#readme"
+}
